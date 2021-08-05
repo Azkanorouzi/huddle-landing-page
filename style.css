@@ -22,6 +22,10 @@ body{
  flex-direction: column;
  width: 100vw;
 }
+body{
+ width: 100vw !important;
+ height: 100vh !important;
+}
 /* flex-end */
 
 /* images and logo */
@@ -142,8 +146,15 @@ font-size: 13px;
  }
  }
  @media  screen and (min-width:1075px) {
+  .bg-mobile{
+   display: none;
+  }
+  .bg-desktop{
+   display: inline;
+   height: 100vh;
+  }
   body{
-   overflow: hidden !important;
+  overflow-x: hidden !important;
   }
    .imgs .img{
    width: 550px;
@@ -181,7 +192,32 @@ font-size: 13px;
    font-size: 40px;
  }
  .icons{
-  margin-top: 35vh;
- left: 27vw;
+  position: absolute !important;  
+  left: 0px;
+  right: 0px;
+  top: 60vh;
+  left: 50vw;
  }
+     html{
+     overflow-y: hidden;
+    }
+    .container{
+     overflow-y: hidden !important;
+    }
+    body{
+     overflow-y: hidden !important;
+    }
  }
+  @media  screen and (max-height:597px){
+    .icons{
+  top: 50vh;
+ }
+
+  }
+    @media  screen and (min-width:854px){
+     .icons{
+      top: 50px;
+     }
+    }
+
+
