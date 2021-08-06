@@ -216,8 +216,39 @@ font-size: 13px;
   }
     @media  screen and (min-width:854px){
      .icons{
-      top: 50px;
+      top: 220px;
      }
     }
+      @media  screen and (max-width:245px){
+      .bg-mobile{
+        width: 253px !important;
+        height: 253px !important;
+      }
+      .img{
+        width: 198px !important;
+        height: 141px !important;
+        position: relative !important;
+        right: 25px;
+      }
+
+      .container{
+        padding: 25vw;
+      }
+      .register-button{
+         position: relative;
+         right: 20px;
+      }
+      }
+      @media  screen and (max-width:190px){
+        .txt{
+          left: 55px;
+        }
+        .header{
+          font-size: 17px;
+        }
+
+      }
+
+   
 
 
